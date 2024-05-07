@@ -17,17 +17,14 @@
 # include "raycaster.h"
 # include "frame.h"
 
+# include "../inc/hooks.h"
 # include "../libft/header/libft.h" 
 # include "../libft/header/ft_printf.h"
 # include "../libft/header/get_next_line.h"
 # include <fcntl.h>
 
-// OS detection
-# ifdef __linux__
-#  include "../inc/hooks_linux.h"
-# elif defined(__APPLE__)
-#  include "../inc/hooks_mac.h"
-# endif
+
+
 
 // VERIFICATION.C
 int		validate_cub(char *map_name);
