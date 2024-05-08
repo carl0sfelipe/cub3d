@@ -6,7 +6,7 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 17:57:35 by csiqueir          #+#    #+#             */
-/*   Updated: 2024/05/08 17:57:37 by csiqueir         ###   ########.fr       */
+/*   Updated: 2024/05/08 18:47:07 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # define ROT_SPEED		0.1
 # define MOVE_SPEED		0.25
 
-# include "mlx.h" 
+# include "../mlx_linux/mlx.h" 
 # include <math.h>
 # include <stdlib.h>
 # include <stdio.h>
