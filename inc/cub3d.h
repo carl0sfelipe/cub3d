@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cub3d.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/08 17:57:35 by csiqueir          #+#    #+#             */
+/*   Updated: 2024/05/08 17:57:37 by csiqueir         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CUB3D_H
 # define CUB3D_H
 
@@ -17,14 +29,29 @@
 # include "raycaster.h"
 # include "frame.h"
 
-# include "../inc/hooks.h"
 # include "../libft/header/libft.h" 
 # include "../libft/header/ft_printf.h"
 # include "../libft/header/get_next_line.h"
 # include <fcntl.h>
 
+//HOOKS
+enum
+{
+	ESC = 65307,
+	W = 119,
+	A = 97,
+	S = 115,
+	D = 100,
+	LEFT_ARROW = 65361,
+	RIGHT_ARROW = 65363
+};
 
-
+// MLX events
+enum
+{
+	ON_KEYDOWN = 2,
+	ON_DESTROY = 17
+};
 
 // VERIFICATION.C
 int		validate_cub(char *map_name);
